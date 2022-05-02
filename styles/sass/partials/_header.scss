@@ -1,0 +1,31 @@
+header{
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: contain;
+    padding-bottom: 40px;
+}
+.title{
+
+h1{
+    color:$tertiary;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    font-family: $secondaryFont;
+    font-size: 8rem;
+    bottom: 0px;
+}
+h2{
+    color: $solidWhite;
+    text-align: center;
+    margin: 0px;
+    top: 0;
+
+}
+.headerBox{
+    z-index: -1;
+    img{
+        width: 70%;
+        position: relative;
+    left: 50%;
+    }
+}
+}

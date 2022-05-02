@@ -1,0 +1,148 @@
+@media (min-width:715px){
+    .navBar .Wrapper ul li{
+        margin: 10px;
+    }
+    .navBar .wrapper h4{
+        visibility: visible;
+        margin: auto 40px;
+        padding: auto;
+        color: $solidWhite;
+    }
+.title{
+    .wrapper{
+        h1,h2{
+            z-index: 10;
+        }
+    }
+}
+.headerBox{
+img{
+    height: auto;
+
+}
+}
+.aboutContainer .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.planLocations{
+    width: auto;
+    display: flex;
+    
+    .wrapper{
+        
+        
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    h3{
+        margin: 0px;
+    }
+}
+
+.locationImg{
+    position: relative;
+    top: -30px;
+    margin: 0PX;
+    padding-right: 50px;
+    width: 100%;
+    
+}
+.locationText{
+    
+    text-align: right;
+    right: 0%;
+    a{
+        margin:10px 0px 10px auto;    
+    } 
+}
+.planImg{
+    position: relative;
+    bottom: -15px;
+    margin: 0px;
+    padding-left: 50px;
+    width: 100%;
+}
+.planText{
+    text-align: left;
+    margin: 0 auto;
+    padding: 0px;
+    a{
+        margin:10px auto 20px  0px; 
+    }
+}
+
+.hostParty{
+    background-color: $primary;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        text-align: center;
+        div{
+            
+        h2{
+            margin: 0 auto;
+        }
+        p{
+            margin: 0px;
+        }
+    }
+}
+}
+.beerBanner{
+    width: 100%;
+}
+.eventsContainer{
+    padding: 30px auto;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        .eventImg{ 
+            width: 30%; 
+            img{
+                width: 100%;
+                margin: 0px;
+            }
+        }
+        .eventText{
+            width: 70%;
+            h2{
+                margin: 0px;
+            }
+        }
+    }
+}
+.galleryContainer{ 
+    padding: 40px;     
+        .wrapper{
+            align-content: center;
+            margin: 0 auto;
+            gap: 5%;
+            width: 90%;
+            padding: 40px auto;
+            img{
+        width: 80%;
+        height: 80%;
+            }
+            .thirdImg{
+                visibility: visible;
+            }
+        }
+    }
+
+}
+@media(min-width:1200px){
+    .locationImg, .planImg{
+        max-width: 1200px;
+    }
+    .beerBanner{
+        width: fit-content;
+    }
+}

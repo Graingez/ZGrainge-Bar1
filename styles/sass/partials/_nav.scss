@@ -1,0 +1,39 @@
+.navBar{
+    width: 80%;
+    padding-top: 0px;
+    margin: 0 auto;
+.wrapper{
+    display: flex;
+    justify-content: center;
+    ul{
+        
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        margin: 0 0px;
+        li{
+            display: block;
+            justify-content: space-around;
+            padding: 0px;
+            margin:  0 auto;
+        }
+        }
+        h4{
+            visibility: hidden;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+.title{
+h1{
+    color:$tertiary;
+    text-align: center;
+    margin: 0px;
+}
+h2{
+    color: $solidWhite;
+    text-align: center;
+    margin: 0px;
+}
+}

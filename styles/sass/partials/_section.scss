@@ -1,0 +1,194 @@
+.aboutContainer{
+    background-color: $primary;
+    padding: 40px 0px;
+
+    ;
+    .wrapper{
+        div{
+            
+            h2, p{
+                color: $solidWhite;
+            }
+            i{
+                background-color: $secondary;
+                padding: 10px;
+                border-radius: 150px;
+                
+            }
+        }
+    }
+    .community, .blog, .getInTouch, .newSpace{
+        display: flex;
+        flex-basis: 50%;
+        gap: 5%;
+        // width: 100%;
+        h2{
+            margin: 0px;
+        }
+        p{
+            margin-top: 0px;
+        }
+        i{
+            margin-bottom: auto;
+        }
+    }
+}
+.planLocations{
+    background-color:$quinary ;
+    // display: flex;
+    // flex-wrap: wrap;
+    .wrapper{
+        width: 80%;
+        div{
+            color: $solidWhite;
+            a{
+                color: $solidWhite;
+                text-decoration: none;
+                background-color: $secondary;
+                padding: 10px 25px;
+                // margin: 10px auto;
+                display: inline-block;
+            }
+        }
+    }
+}
+.newLocation{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;  
+    padding: 30px AUTO ;
+}
+.locationImg{
+    margin: 0PX AUTO;
+    width: 80%;
+    img{
+    box-shadow: 13px 12px 0px -1px $tertiary;  
+    
+    }  
+}
+.locationText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    right: 0%;
+    a{
+        margin:10px  auto;    
+    } 
+    p{
+        text-align: left;
+        padding-left: auto;
+    } 
+}
+
+.planAhead{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 30px auto;
+}
+.planImg{ 
+    margin: 30px auto;
+    width: 80%;
+    img{
+    box-shadow: -13px 13px 0px -1px $tertiary;
+    }
+}
+.planText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    a{
+        margin:10px  auto; 
+    }
+}
+// host a party menu ===============//
+
+.hostParty{
+    background-color: $primary;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+            
+        h2{
+            margin: 0 auto;
+        }
+        p{
+            margin: 0PX AUTO;
+        }
+}
+}
+.findMore{
+        color: $solidWhite;
+        text-decoration: none;
+        background-color: $secondary;
+        padding: 10px 25px;
+        margin: 10px auto;
+        display: inline-block;
+        font-size: 18px;
+    } 
+
+    // events============// 
+
+    .eventsContainer{
+        background-color: $primary;
+        padding:40px auto;
+        .wrapper{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    .eventImg{
+        flex-basis: 40%;
+        img{
+            margin: 0 auto;
+            padding: 30px auto;
+            width: 60%;
+            box-shadow: -13px 13px 0px -1px $tertiary;
+        }
+    }
+
+    .eventText{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 30px 0px;
+        h2{
+            margin: 0px;
+        }
+        a{
+            margin: 0px auto 0px 0px;
+
+        }
+    }
+
+    .galleryContainer{
+        background-color: $quinary;
+        
+        .wrapper{
+            display: flex;
+            width: 100%;
+            margin:0px;
+            justify-content: center;
+            img{
+        width: 100%;
+        height: 80%;
+            }
+            .thirdImg{
+                visibility: collapse;
+            }
+        }
+    }
+    footer{
+        background-color: $primary;
+        text-align: center;
+        p{
+            padding: 20px ;
+            margin: 0 auto;
+        }
+    }

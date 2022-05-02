@@ -1,0 +1,73 @@
+    // font-family: 'Chathura', sans-serif;
+
+    // font-family: 'Tulpen One', cursive;
+
+    // NAV BAR================================//
+    .navBar{
+        .wrapper{
+            a{
+                        text-decoration: none;
+                        color: $solidWhite;
+                        font-size: 16px;
+                        font-weight: bold;
+                        padding: 5px 15px;
+                        text-transform: uppercase;
+                    }        
+            }
+        }
+        .navLogo{
+            font-family: $secondaryFont;
+            font-size: 50px;
+        }
+
+        // about section===================//
+        .aboutContainer .wrapper div{
+            font-family: $primaryFont;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+            i{
+                color: $solidWhite;
+            }
+        }
+        
+
+        .planLocation{
+            font-family: $primaryFont;
+            
+            .wrapper div{
+            font-family: $primaryFont;
+            color: $solidWhite;
+            }
+        }
+    .hostParty{
+        color: $solidWhite;
+        font-family: $primaryFont;
+        h2{
+            color: $tertiary;
+            font-size: 36px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .findMore{
+            text-decoration: none;
+            font-size: 25px;
+        }
+    }
+
+    .eventText{
+        color: $solidWhite;
+        h2{
+            color: $tertiary;
+        }
+        p{
+            line-height: 25px;
+        }
+    }
+    footer{
+        color: $solidWhite;
+    }
