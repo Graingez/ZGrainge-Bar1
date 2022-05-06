@@ -28,14 +28,11 @@ img{
 }
 
 .planLocations{
-    width: auto;
-    display: flex;
-    
     .wrapper{
-        
-        
+        margin: 0px auto;
         display: flex;
-        justify-content: space-between;
+        gap: 10%;
+       
         
     }
     h3{
@@ -46,8 +43,7 @@ img{
 .locationImg{
     position: relative;
     top: -30px;
-    margin: 0PX;
-    padding-right: 50px;
+    margin: 0PX auto;
     width: 100%;
     
 }
@@ -55,21 +51,26 @@ img{
     
     text-align: right;
     right: 0%;
+    padding-left: 20%;
+    padding-top: 20px;
     a{
         margin:10px 0px 10px auto;    
     } 
+}
+.planAhead .wrapper{
+    margin-left: auto;
 }
 .planImg{
     position: relative;
     bottom: -15px;
     margin: 0px;
-    padding-left: 50px;
     width: 100%;
 }
 .planText{
     text-align: left;
     margin: 0 auto;
-    padding: 0px;
+    padding-right: 20%;
+    padding-top: 30px;
     a{
         margin:10px auto 20px  0px; 
     }
@@ -96,7 +97,9 @@ img{
 }
 }
 .beerBanner{
+    margin: 0 auto;
     width: 100%;
+    align-content: center;
 }
 .eventsContainer{
     padding: 30px auto;

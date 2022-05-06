@@ -20,7 +20,8 @@
     .community, .blog, .getInTouch, .newSpace{
         display: flex;
         flex-basis: 50%;
-        gap: 5%;
+        gap: 1%;
+        width: 100%;
         // width: 100%;
         h2{
             margin: 0px;
@@ -35,10 +36,11 @@
 }
 .planLocations{
     background-color:$quinary ;
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
     .wrapper{
-        width: 80%;
+        max-width: 1300px;
         div{
             color: $solidWhite;
             a{
@@ -47,20 +49,19 @@
                 background-color: $secondary;
                 padding: 10px 25px;
                 // margin: 10px auto;
-                display: inline-block;
+
             }
         }
     }
 }
-.newLocation{
+.newLocation .wrapper{
     display: flex;
-    flex-direction: column;
-    flex-basis: 50%;  
+    flex-direction: column;  
     padding: 30px AUTO ;
 }
 .locationImg{
     margin: 0PX AUTO;
-    width: 80%;
+    width: 70%;
     img{
     box-shadow: 13px 12px 0px -1px $tertiary;  
     
@@ -80,15 +81,14 @@
     } 
 }
 
-.planAhead{
+.planAhead .wrapper{
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
-    padding: 30px auto;
+    padding: 30px 0px;
 }
 .planImg{ 
     margin: 30px auto;
-    width: 80%;
+    width: 80%;    
     img{
     box-shadow: -13px 13px 0px -1px $tertiary;
     }

@@ -317,6 +317,14 @@ footer {
   color: #fff;
 }
 
+.contactTitle {
+  color: #fff;
+}
+
+.contactBox {
+  color: #fff;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -383,34 +391,39 @@ ul {
 header {
   background-image: url(../assets/home-image-1.jpg);
   background-size: contain;
-  padding-bottom: 40px;
+  margin-bottom: 80px;
+  position: relative;
 }
 
+.title {
+  margin-top: 80px;
+}
 .title h1 {
   color: #ff8327;
-  text-align: center;
-  margin: 20px 0px 0px 0px;
   font-family: "Tulpen One", sans-serif;
   font-size: 8rem;
   bottom: 0px;
+  position: absolute;
+  z-index: 1;
+  line-height: 50%;
 }
-.title h2 {
+.title h1 span {
   color: #fff;
-  text-align: center;
-  margin: 0px;
+  text-align: left;
+  font-size: 2rem;
   top: 0;
+  display: block;
 }
-.title .headerBox {
-  z-index: -1;
-}
-.title .headerBox img {
-  width: 70%;
-  position: relative;
-  left: 50%;
+
+.headerBox {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -85px;
 }
 
 .aboutContainer {
-  background-color: rgb(17, 16, 16);
+  background-color: rgb(27, 27, 27);
   padding: 40px 0px;
 }
 .aboutContainer .wrapper div h2, .aboutContainer .wrapper div p {
@@ -427,7 +440,8 @@ header {
   display: flex;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  gap: 5%;
+  gap: 1%;
+  width: 100%;
 }
 .aboutContainer .community h2, .aboutContainer .blog h2, .aboutContainer .getInTouch h2, .aboutContainer .newSpace h2 {
   margin: 0px;
@@ -441,9 +455,15 @@ header {
 
 .planLocations {
   background-color: #220303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10%;
 }
 .planLocations .wrapper {
-  width: 80%;
+  max-width: 1300px;
 }
 .planLocations .wrapper div {
   color: #fff;
@@ -453,10 +473,9 @@ header {
   text-decoration: none;
   background-color: #bf2603;
   padding: 10px 25px;
-  display: inline-block;
 }
 
-.newLocation {
+.newLocation .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,14 +483,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   padding: 30px AUTO;
 }
 
 .locationImg {
   margin: 0PX AUTO;
-  width: 80%;
+  width: 70%;
 }
 .locationImg img {
   -webkit-box-shadow: 13px 12px 0px -1px #ff8327;
@@ -497,7 +514,7 @@ header {
   padding-left: auto;
 }
 
-.planAhead {
+.planAhead .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,9 +522,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding: 30px auto;
+  padding: 30px 0px;
 }
 
 .planImg {
@@ -536,7 +551,7 @@ header {
 }
 
 .hostParty {
-  background-color: rgb(17, 16, 16);
+  background-color: rgb(27, 27, 27);
 }
 .hostParty .wrapper {
   display: -webkit-box;
@@ -573,7 +588,7 @@ header {
 }
 
 .eventsContainer {
-  background-color: rgb(17, 16, 16);
+  background-color: rgb(27, 27, 27);
   padding: 40px auto;
 }
 .eventsContainer .wrapper {
@@ -635,7 +650,7 @@ header {
 }
 
 footer {
-  background-color: rgb(17, 16, 16);
+  background-color: rgb(27, 27, 27);
   text-align: center;
 }
 footer p {
@@ -671,19 +686,12 @@ footer p {
         flex-wrap: wrap;
   }
 
-  .planLocations {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .planLocations .wrapper {
+    margin: 0px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 10%;
   }
   .planLocations h3 {
     margin: 0px;
@@ -692,38 +700,43 @@ footer p {
   .locationImg {
     position: relative;
     top: -30px;
-    margin: 0PX;
-    padding-right: 50px;
+    margin: 0PX auto;
     width: 100%;
   }
 
   .locationText {
     text-align: right;
     right: 0%;
+    padding-left: 20%;
+    padding-top: 20px;
   }
   .locationText a {
     margin: 10px 0px 10px auto;
+  }
+
+  .planAhead .wrapper {
+    margin-left: auto;
   }
 
   .planImg {
     position: relative;
     bottom: -15px;
     margin: 0px;
-    padding-left: 50px;
     width: 100%;
   }
 
   .planText {
     text-align: left;
     margin: 0 auto;
-    padding: 0px;
+    padding-right: 20%;
+    padding-top: 30px;
   }
   .planText a {
     margin: 10px auto 20px 0px;
   }
 
   .hostParty {
-    background-color: rgb(17, 16, 16);
+    background-color: rgb(27, 27, 27);
   }
   .hostParty .wrapper {
     display: -webkit-box;
@@ -750,7 +763,10 @@ footer p {
   }
 
   .beerBanner {
+    margin: 0 auto;
     width: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 
   .eventsContainer {
@@ -807,5 +823,186 @@ footer p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+}
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+header {
+  background-image: url(../assets/contact-header-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.contactTitle .wrapper h1 {
+  font-size: 3rem;
+  padding-top: 40px;
+}
+
+.contactBox {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: rgb(27, 27, 27);
+  height: 100%;
+  padding: 20px;
+}
+
+.contactBox .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0px;
+  gap: 10%;
+}
+
+.contactInfo {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 20px;
+}
+
+.inputBox {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #220303;
+  -webkit-box-shadow: 13px 12px 0px -1px #ff8327;
+          box-shadow: 13px 12px 0px -1px #ff8327;
+  position: absolute;
+  top: -175px;
+  right: 0px;
+}
+
+.mediaIcon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  padding: 0px;
+}
+.mediaIcon ul i {
+  font-size: 20px;
+}
+
+.email p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.addressInfo ul {
+  padding: 0px;
+}
+.addressInfo ul p {
+  margin: 0;
+  font-size: 20px;
+}
+
+form {
+  color: #fff;
+  margin: 0 auto;
+  width: 90%;
+}
+
+button {
+  margin: 40px auto;
+  width: 100%;
+  border: none;
+  color: white;
+  background: #bf2603;
+  padding: 0;
+  height: 40px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 3.2px;
+}
+
+input {
+  border: none;
+  color: #fff;
+  background-color: #220303;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 3.2px;
+  border-bottom: 1px solid #fff;
+}
+
+input[type=text] {
+  width: 45%;
+  height: 60px;
+  padding-left: 10px;
+}
+
+.infoInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.messageBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+textarea {
+  background-color: #220303;
+  color: #fff;
+  margin: 40px auto 20px auto;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #fff;
+}
+
+.contactFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    margin-bottom: 0px;
+  }
+
+  .contactBox .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBox .wrapper .inputBox {
+    width: 100%;
+    position: static;
+  }
+
+  .contactFooter {
+    position: static;
   }
 }
