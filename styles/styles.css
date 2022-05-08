@@ -650,7 +650,7 @@ header {
 }
 
 footer {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(63, 62, 62);
   text-align: center;
 }
 footer p {
@@ -835,11 +835,12 @@ header {
   background-size: cover;
   background-position: center;
   height: 30vh;
+  margin-bottom: 40px;
 }
 
 .contactTitle .wrapper h1 {
-  font-size: 3rem;
-  padding-top: 40px;
+  font-family: "Chathura", sans-serif;
+  font-size: 5rem;
 }
 
 .contactBox {
@@ -848,6 +849,7 @@ header {
   background-color: rgb(27, 27, 27);
   height: 100%;
   padding: 20px;
+  font-family: "Chathura", sans-serif;
 }
 
 .contactBox .wrapper {
@@ -883,7 +885,7 @@ header {
   -webkit-box-shadow: 13px 12px 0px -1px #ff8327;
           box-shadow: 13px 12px 0px -1px #ff8327;
   position: absolute;
-  top: -175px;
+  top: -125px;
   right: 0px;
 }
 
@@ -891,16 +893,19 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5%;
   padding: 0px;
 }
 .mediaIcon ul i {
   font-size: 20px;
+  padding-right: 20px;
+  line-height: 50%;
 }
 
 .email p {
   margin: 0px;
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 0%;
+  padding-bottom: 20px;
 }
 
 .addressInfo ul {
@@ -908,7 +913,8 @@ header {
 }
 .addressInfo ul p {
   margin: 0;
-  font-size: 20px;
+  font-size: 35px;
+  line-height: 70%;
 }
 
 form {
@@ -938,6 +944,7 @@ input {
   font-weight: 300;
   letter-spacing: 3.2px;
   border-bottom: 1px solid #fff;
+  font-family: "Chathura", sans-serif;
 }
 
 input[type=text] {
@@ -974,9 +981,12 @@ textarea {
   background-color: #220303;
   color: #fff;
   margin: 40px auto 20px auto;
+  padding: 20px;
+  font-size: 25px;
   width: 100%;
   height: 200px;
   border: 1px solid #fff;
+  font-family: "Chathura", sans-serif;
 }
 
 .contactFooter {
@@ -1021,6 +1031,9 @@ html, body {
 
 .blogTitle .wrapper h1 {
   color: white;
+  margin-left: 10%;
+  font-family: "Tulpen One", sans-serif;
+  font-size: 4rem;
 }
 
 .wrapper {
@@ -1035,7 +1048,7 @@ html, body {
 }
 .blogBox .wrapper .sideBlog {
   margin: 100px auto;
-  width: 40%;
+  width: 50%;
 }
 .blogBox .wrapper .sideBlog .sideBlogContent {
   padding-bottom: 30px;
@@ -1044,32 +1057,46 @@ html, body {
 }
 .blogBox .wrapper .sideBlog .ourMission {
   padding: 0px 20px;
+  font-family: "Chathura", sans-serif;
 }
 .blogBox .wrapper .sideBlog .ourMission h2 {
   margin: 0px;
+  font-size: 40px;
+  font-weight: bold;
 }
 .blogBox .wrapper .sideBlog .ourMission p {
   margin: 0px;
+  font-size: 25px;
+  font-weight: lighter;
 }
 .blogBox .wrapper .sideBlog .ourMission a {
   color: #ff8327;
+  font-size: 25px;
+  font-weight: lighter;
 }
 .blogBox .wrapper .sideBlog .recentPost {
   padding: 0px 20px;
+  font-family: "Chathura", sans-serif;
 }
 .blogBox .wrapper .sideBlog .recentPost h2 {
   margin-bottom: 0px;
+  font-size: 40px;
+  font-weight: bold;
 }
 .blogBox .wrapper .sideBlog .recentPost ul {
   margin-top: 0px;
+  font-size: 25px;
 }
 .blogBox .wrapper ul li::before {
-  content: ".";
-  color: #bf2603;
+  content: "";
+  background-color: #bf2603;
   font-weight: bold;
   display: inline-block;
-  width: 0.8rem;
-  margin-left: -1em;
+  margin-right: 10px;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100px;
+  margin-left: -1rem;
   font-size: 30px;
 }
 .blogBox .wrapper a {
@@ -1082,6 +1109,7 @@ html, body {
   right: 64px;
   top: -16px;
 }
+
 .currentBlog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1092,7 +1120,7 @@ html, body {
           flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  margin-left: 40px;
+  margin-left: 30px;
   border-left: 4px solid #ff8327;
   border-bottom: 4px solid #ff8327;
   padding-left: 0px;
@@ -1100,6 +1128,20 @@ html, body {
 .currentBlog .currentBlogPost {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: "Chathura", sans-serif;
+}
+.currentBlog .currentBlogPost h2 {
+  margin: 0px;
+  font-size: 40px;
+}
+.currentBlog .currentBlogPost h3 {
+  margin-top: 0px;
+  color: #ff8327;
+  font-size: 25px;
+}
+.currentBlog .currentBlogPost p {
+  font-size: 25px;
 }
 .currentBlog .currentBlogImg {
   top: -65px;
@@ -1109,16 +1151,18 @@ html, body {
   -webkit-box-shadow: -13px 13px 0px -1px #ff8327;
           box-shadow: -13px 13px 0px -1px #ff8327;
   margin-left: 8px;
-  width: 100%;
 }
 
 .comments {
   margin-left: auto;
   width: 70%;
+  font-family: "Chathura", sans-serif;
 }
 .comments h2 {
   padding-left: 15%;
   color: #fff;
+  font-size: 60px;
+  margin: 0px;
 }
 .comments .commentBox {
   width: 70%;
@@ -1142,18 +1186,22 @@ html, body {
   display: flex;
 }
 .userComment .commentImg {
+  padding-top: 10px;
   margin-right: 20px;
+  display: inline-block;
 }
 .userComment .commentText {
   width: 80%;
 }
 .userComment .commentText h4 {
-  margin: 0px 0px 5px 0px;
+  font-size: 35px;
+  margin: 0px;
   color: #ff8327;
 }
 .userComment .commentText p {
   margin: 0px;
   color: #fff;
+  font-size: 25px;
 }
 
 .commentInput {
@@ -1161,6 +1209,40 @@ html, body {
   margin: 40px auto;
 }
 .commentInput input, .commentInput textarea {
+  font-family: "Chathura", sans-serif;
   background-color: rgb(27, 27, 27);
   border-color: #ff8327;
+  font-size: 30px;
+}
+.commentInput textarea {
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    margin: 0px;
+  }
+
+  .blogBox .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .comments {
+    width: 100%;
+    border-top: 4px solid #ff8327;
+  }
+
+  .blogBox .wrapper .sideBlog .sideBlogContent {
+    width: 130%;
+  }
+
+  .commentInput input {
+    width: 80%;
+  }
 }

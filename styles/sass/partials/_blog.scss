@@ -13,6 +13,10 @@ overflow-x: hidden;
 .blogTitle .wrapper{
     h1{
         color: white;
+       
+        margin-left: 10%;
+        font-family: $secondaryFont;
+        font-size: 4rem;
     }
 }
 .wrapper{
@@ -25,7 +29,7 @@ overflow-x: hidden;
     
     .sideBlog{
         margin: 100px auto;
-        width: 40%;
+        width: 50%;
         .sideBlogContent{
             padding-bottom: 30px;
             width: 80%;
@@ -33,33 +37,47 @@ overflow-x: hidden;
     }
     .ourMission{
         padding: 0px 20px;
+        font-family: $primaryFont;
         h2{
             margin:0px ;
+            font-size: 40px;
+            font-weight: bold;
         }
         p{
             margin: 0px;
+            font-size: 25px;
+            font-weight: lighter;
         }
         a{
             color: $tertiary;
+            font-size: 25px;
+            font-weight: lighter;
         }
     }
     .recentPost{
         padding: 0px 20px;
+        font-family: $primaryFont;
         h2{
             margin-bottom: 0px;
+            font-size: 40px;
+            font-weight: bold;
         }
         ul{
             margin-top: 0px;
+            font-size: 25px;
         }
     }
     }
     ul li::before {
-  content: "."; 
-  color: $secondary; 
+  content: ""; 
+  background-color: $secondary; 
   font-weight: bold; 
   display: inline-block; 
-  width: .8rem;
-  margin-left: -1em; 
+  margin-right: 10px;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 100px; 
+  margin-left: -1rem;
   font-size: 30px;
 }
 a{
@@ -74,9 +92,6 @@ a{
     right: 64px;
     top: -16px;
 }
-    img{
-        
-    }
 }
 
 .currentBlog{
@@ -84,13 +99,27 @@ a{
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-    margin-left: 40px;
+    margin-left: 30px;
     border-left: 4px solid $tertiary;
     border-bottom: 4px solid $tertiary;
     padding-left: 0px;
     .currentBlogPost{
         width: 80%;
         margin: 0 auto;
+        margin-bottom: 30px;
+        font-family: $primaryFont;
+        h2{
+            margin: 0px;
+            font-size: 40px;
+        }
+        h3{
+            margin-top: 0px;
+            color: $tertiary;
+            font-size: 25px;
+        }
+        p{
+            font-size: 25px;
+        }
     }
     .currentBlogImg{
         top: -65px;
@@ -98,16 +127,19 @@ a{
         img{
         box-shadow: -13px 13px 0px -1px $tertiary;
         margin-left: 8px;
-        width: 100%;
+        
     }
 }
 }
 .comments{
     margin-left: auto;
     width: 70%;
+    font-family: $primaryFont;
     h2{
         padding-left: 15%;
         color: $solidWhite;
+        font-size: 60px;
+        margin: 0px;
     }
     .commentBox{
         width: 70%;
@@ -122,19 +154,21 @@ a{
 .userComment{
     display: flex;
     .commentImg{
+        padding-top: 10px;
         margin-right: 20px;
-        img{
-        }
+        display: inline-block;
     }
     .commentText{
         width: 80%;
         h4{
-            margin: 0px 0px 5px 0px;
+            font-size: 35px;
+            margin: 0px;
             color: $tertiary;
         }
         p{
             margin: 0px;
             color: $solidWhite;
+            font-size: 25px;
         }
     }
 }
@@ -142,7 +176,40 @@ a{
     width: 80%;
     margin: 40px auto;
     input, textarea{
+    font-family: $primaryFont;
     background-color: $primary;
     border-color: $tertiary;
+    font-size: 30px;
+}
+textarea{
+    padding: 20px;
+}
+}
+
+@media(max-width:800px){
+    h1{
+        margin: 0px;
+    }
+    .blogBox{
+    .wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+}
+.comments{
+    width: 100%;
+    border-top: 4px solid $tertiary;;
+    }
+.blogBox .wrapper .sideBlog .sideBlogContent {
+    width: 130%;
+
+}
+.commentInput{
+    
+    input{
+        width: 80%;
+
+    }
+    
 }
 }
