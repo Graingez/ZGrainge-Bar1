@@ -1006,3 +1006,161 @@ textarea {
     position: static;
   }
 }
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-header-1.jpg);
+  margin-bottom: 0px;
+}
+
+.blogTitle .wrapper h1 {
+  color: white;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.blogBox .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+.blogBox .wrapper .sideBlog {
+  margin: 100px auto;
+  width: 40%;
+}
+.blogBox .wrapper .sideBlog .sideBlogContent {
+  padding-bottom: 30px;
+  width: 80%;
+  background-color: #220303;
+}
+.blogBox .wrapper .sideBlog .ourMission {
+  padding: 0px 20px;
+}
+.blogBox .wrapper .sideBlog .ourMission h2 {
+  margin: 0px;
+}
+.blogBox .wrapper .sideBlog .ourMission p {
+  margin: 0px;
+}
+.blogBox .wrapper .sideBlog .ourMission a {
+  color: #ff8327;
+}
+.blogBox .wrapper .sideBlog .recentPost {
+  padding: 0px 20px;
+}
+.blogBox .wrapper .sideBlog .recentPost h2 {
+  margin-bottom: 0px;
+}
+.blogBox .wrapper .sideBlog .recentPost ul {
+  margin-top: 0px;
+}
+.blogBox .wrapper ul li::before {
+  content: ".";
+  color: #bf2603;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.8rem;
+  margin-left: -1em;
+  font-size: 30px;
+}
+.blogBox .wrapper a {
+  text-decoration: none;
+  color: white;
+}
+.blogBox .sideBlogImg {
+  position: relative;
+  width: 120%;
+  right: 64px;
+  top: -16px;
+}
+.currentBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  margin-left: 40px;
+  border-left: 4px solid #ff8327;
+  border-bottom: 4px solid #ff8327;
+  padding-left: 0px;
+}
+.currentBlog .currentBlogPost {
+  width: 80%;
+  margin: 0 auto;
+}
+.currentBlog .currentBlogImg {
+  top: -65px;
+  position: relative;
+}
+.currentBlog .currentBlogImg img {
+  -webkit-box-shadow: -13px 13px 0px -1px #ff8327;
+          box-shadow: -13px 13px 0px -1px #ff8327;
+  margin-left: 8px;
+  width: 100%;
+}
+
+.comments {
+  margin-left: auto;
+  width: 70%;
+}
+.comments h2 {
+  padding-left: 15%;
+  color: #fff;
+}
+.comments .commentBox {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.commentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
+}
+
+.userComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.userComment .commentImg {
+  margin-right: 20px;
+}
+.userComment .commentText {
+  width: 80%;
+}
+.userComment .commentText h4 {
+  margin: 0px 0px 5px 0px;
+  color: #ff8327;
+}
+.userComment .commentText p {
+  margin: 0px;
+  color: #fff;
+}
+
+.commentInput {
+  width: 80%;
+  margin: 40px auto;
+}
+.commentInput input, .commentInput textarea {
+  background-color: rgb(27, 27, 27);
+  border-color: #ff8327;
+}

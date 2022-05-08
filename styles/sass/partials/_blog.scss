@@ -1,0 +1,148 @@
+
+html,body {
+    width: 100%;
+height: 100%;
+padding: 0px;
+margin: 0px;
+overflow-x: hidden;
+}
+.blogHeader{
+    background-image: url(../assets/blog-header-1.jpg);
+    margin-bottom: 0px;
+}
+.blogTitle .wrapper{
+    h1{
+        color: white;
+    }
+}
+.wrapper{
+    margin: 0 auto;
+}
+.blogBox{
+    .wrapper{
+    display: flex;
+    color: $solidWhite;
+    
+    .sideBlog{
+        margin: 100px auto;
+        width: 40%;
+        .sideBlogContent{
+            padding-bottom: 30px;
+            width: 80%;
+            background-color:  $quinary;
+    }
+    .ourMission{
+        padding: 0px 20px;
+        h2{
+            margin:0px ;
+        }
+        p{
+            margin: 0px;
+        }
+        a{
+            color: $tertiary;
+        }
+    }
+    .recentPost{
+        padding: 0px 20px;
+        h2{
+            margin-bottom: 0px;
+        }
+        ul{
+            margin-top: 0px;
+        }
+    }
+    }
+    ul li::before {
+  content: "."; 
+  color: $secondary; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: .8rem;
+  margin-left: -1em; 
+  font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+}
+
+.sideBlogImg{
+    position: relative;
+    width: 120%;
+    right: 64px;
+    top: -16px;
+}
+    img{
+        
+    }
+}
+
+.currentBlog{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 40px;
+    border-left: 4px solid $tertiary;
+    border-bottom: 4px solid $tertiary;
+    padding-left: 0px;
+    .currentBlogPost{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .currentBlogImg{
+        top: -65px;
+        position: relative;
+        img{
+        box-shadow: -13px 13px 0px -1px $tertiary;
+        margin-left: 8px;
+        width: 100%;
+    }
+}
+}
+.comments{
+    margin-left: auto;
+    width: 70%;
+    h2{
+        padding-left: 15%;
+        color: $solidWhite;
+    }
+    .commentBox{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+.commentBox{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.userComment{
+    display: flex;
+    .commentImg{
+        margin-right: 20px;
+        img{
+        }
+    }
+    .commentText{
+        width: 80%;
+        h4{
+            margin: 0px 0px 5px 0px;
+            color: $tertiary;
+        }
+        p{
+            margin: 0px;
+            color: $solidWhite;
+        }
+    }
+}
+.commentInput{
+    width: 80%;
+    margin: 40px auto;
+    input, textarea{
+    background-color: $primary;
+    border-color: $tertiary;
+}
+}
