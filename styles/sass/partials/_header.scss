@@ -1,35 +1,23 @@
+
 header{
     background-image: url(../assets/home-image-1.jpg);
     background-size: contain;
-    margin-bottom: 80px;
-    position: relative;;
-    
-}
+    // margin-bottom: 80px;
+//     position: relative;
+// }
 .title{
-    margin-top: 80px;
+color: #ff8327;
+font-family: $secondaryFont;
+font-size: 6rem;
+line-height: 50%;
+text-align: center;
     h1{
-        color:$tertiary;
-        font-family: $secondaryFont;
-        font-size: 8rem;
-        bottom: 0px;
-        position: absolute; 
-        z-index: 1;
-        line-height: 50%;
-        
-        
-}
- h1 span{
-    color: $solidWhite;
-    text-align: left;
+        margin: 0 auto;
+    }
+h1 span {
+    color: #fff;
     font-size: 2rem;
-    top: 0;
+    top: 20;
     display: block;
 }
 }
-
-.headerBox{
-    width: 50%;
-    position: absolute;
-    right: 0;
-    bottom: -85px;
-    }

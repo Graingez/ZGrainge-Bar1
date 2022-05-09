@@ -3,6 +3,9 @@
     // font-family: 'Tulpen One', cursive;
 
     // NAV BAR================================//
+    html{
+        font-family: $primaryFont;
+    }
     .navBar{
         .wrapper{
             a{

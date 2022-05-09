@@ -377,17 +377,6 @@ ul {
   padding: 0px;
 }
 
-.title h1 {
-  color: #ff8327;
-  text-align: center;
-  margin: 0px;
-}
-.title h2 {
-  color: #fff;
-  text-align: center;
-  margin: 0px;
-}
-
 header {
   background-image: url(../assets/home-image-1.jpg);
   background-size: contain;
@@ -396,35 +385,30 @@ header {
 }
 
 .title {
-  margin-top: 80px;
+  margin-top: 20px;
+  z-index: 5;
+  text-align: center;
 }
 .title h1 {
   color: #ff8327;
   font-family: "Tulpen One", sans-serif;
   font-size: 8rem;
-  bottom: 0px;
-  position: absolute;
-  z-index: 1;
   line-height: 50%;
 }
 .title h1 span {
   color: #fff;
-  text-align: left;
   font-size: 2rem;
-  top: 0;
+  top: 20;
   display: block;
 }
 
 .headerBox {
-  width: 50%;
-  position: absolute;
-  right: 0;
-  bottom: -85px;
+  display: none;
 }
 
 .aboutContainer {
   background-color: rgb(27, 27, 27);
-  padding: 40px 0px;
+  padding: 60px 0px;
 }
 .aboutContainer .wrapper div h2, .aboutContainer .wrapper div p {
   color: #fff;
@@ -668,10 +652,6 @@ footer p {
     margin: auto 40px;
     padding: auto;
     color: #fff;
-  }
-
-  .title .wrapper h1, .title .wrapper h2 {
-    z-index: 10;
   }
 
   .headerBox img {
