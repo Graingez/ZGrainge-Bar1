@@ -1,11 +1,11 @@
 
-html,body {
-    width: 100%;
-height: 100%;
-padding: 0px;
-margin: 0px;
-overflow-x: hidden;
-}
+// html,body {
+//     width: 100%;
+// height: 100%;
+// padding: 0px;
+// margin: 0px;
+// overflow-x: hidden;
+// }
 .blogHeader{
     background-image: url(../assets/blog-header-1.jpg);
     margin-bottom: 0px;
@@ -13,10 +13,10 @@ overflow-x: hidden;
 .blogTitle .wrapper{
     h1{
         color: white;
-       
         margin-left: 10%;
         font-family: $secondaryFont;
         font-size: 4rem;
+        margin-top: 20px;
     }
 }
 .wrapper{
@@ -66,24 +66,25 @@ overflow-x: hidden;
             margin-top: 0px;
             font-size: 25px;
         }
+        ul li::before {
+            content: ""; 
+            background-color: $secondary; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-right: 10px;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 100px; 
+            margin-left: -1rem;
+            font-size: 30px;
+        }
     }
-    }
-    ul li::before {
-  content: ""; 
-  background-color: $secondary; 
-  font-weight: bold; 
-  display: inline-block; 
-  margin-right: 10px;
-  width: .5rem;
-  height: .5rem;
-  border-radius: 100px; 
-  margin-left: -1rem;
-  font-size: 30px;
+}
+}
 }
 a{
     text-decoration: none;
     color: white;
-}
 }
 
 .sideBlogImg{
@@ -92,7 +93,7 @@ a{
     right: 64px;
     top: -16px;
 }
-}
+
 
 .currentBlog{
     display: flex;
@@ -187,7 +188,7 @@ textarea{
 }
 
 @media(max-width:800px){
-    h1{
+    .title h1{
         margin: 0px;
     }
     .blogBox{
@@ -203,6 +204,9 @@ textarea{
 .blogBox .wrapper .sideBlog .sideBlogContent {
     width: 130%;
 
+}
+.currentBlog .currentBlogImg{
+        top: -17px;
 }
 .commentInput{
     

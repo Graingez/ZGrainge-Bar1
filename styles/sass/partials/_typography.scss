@@ -11,9 +11,9 @@
             a{
                         text-decoration: none;
                         color: $solidWhite;
-                        font-size: 16px;
+                        font-size: 25px;
                         font-weight: bold;
-                        padding: 5px 15px;
+                        padding: 5px 10px;
                         text-transform: uppercase;
                     }        
             }
@@ -40,10 +40,22 @@
 
         .planLocation{
             font-family: $primaryFont;
-            
             .wrapper div{
             font-family: $primaryFont;
             color: $solidWhite;
+            }
+        }
+        .planAhead, .newLocation{
+            h3{
+                font-size: 40px;
+                margin: 0px;
+            }
+            p{
+                font-size: 25px;
+                margin: 0px;
+            }
+            a{
+                font-size: 25px; 
             }
         }
     .hostParty{
@@ -66,9 +78,14 @@
         color: $solidWhite;
         h2{
             color: $tertiary;
+            font-size: 40px;
         }
         p{
             line-height: 25px;
+            font-size: 25px;
+        }
+        a{
+            font-size: 25px;
         }
     }
     footer{

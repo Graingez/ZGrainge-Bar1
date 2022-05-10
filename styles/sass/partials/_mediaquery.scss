@@ -1,133 +1,151 @@
+@media( max-width:390px){
+    .title{
+        padding-top: 60px;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .navBar{
+        .wrapper{
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+}
 @media (min-width:715px){
-    .navBar .Wrapper ul li{
-        margin: 10px;
-    }
-    .navBar .wrapper h4{
-        visibility: visible;
-        margin: auto 40px;
-        color: $solidWhite;
-    }
-}
-.aboutContainer .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.planLocations{
-    .wrapper{
-        margin: 0px auto;
-        display: flex;
-        gap: 10%;
-       
-        
-    }
-    h3{
+    .navBar .Wrapper ul {
+    li{
         margin: 0px;
     }
 }
-
-.locationImg{
-    position: relative;
-    top: -30px;
-    margin: 0PX auto;
-    width: 100%;
-    
-}
-.locationText{
-    
-    text-align: right;
-    right: 0%;
-    padding-left: 20%;
-    padding-top: 20px;
-    a{
-        margin:10px 0px 10px auto;    
-    } 
-}
-.planAhead .wrapper{
-    margin-left: auto;
-}
-.planImg{
-    position: relative;
-    bottom: -15px;
-    margin: 0px;
-    width: 100%;
-}
-.planText{
-    text-align: left;
-    margin: 0 auto;
-    padding-right: 20%;
-    padding-top: 30px;
-    a{
-        margin:10px auto 20px  0px; 
-    }
-}
-
-.hostParty{
-    background-color: $primary;
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
+    .navBar .wrapper h4{
+        visibility: visible;
         text-align: center;
-        div{
-            
-        h2{
-            margin: 0 auto;
+        margin: auto 20px;
+        color: $solidWhite;
+    }
+
+    .aboutContainer .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .planLocations{
+        .wrapper{
+            margin: 0px auto;
+            display: flex;
+            gap: 10%;   
         }
-        p{
+        h3{
             margin: 0px;
         }
     }
-}
-}
-.beerBanner{
-    margin: 0 auto;
-    width: 100%;
-    align-content: center;
-}
-.eventsContainer{
-    height: 250px;
-    padding: 30px ;
-    .wrapper{
-        display: flex;
-        align-items: center;
-        gap: 5%;
-        .eventImg{ 
-            width: 20%; 
-            img{
-                width: 80%;
-                margin: 0px;
-            }
+
+    .locationImg{
+        position: relative;
+        top: -50px;
+        margin: 0PX auto;
+        width: 100%;
+        
+    }
+    .locationText{
+        
+        text-align: right;
+        right: 0%;
+        padding-left: 0%;
+        padding-top: 30px;
+        a{
+            margin:10px 0px 10px auto;    
+        } 
+    }
+    .planAhead {
+        flex-direction: column;
+        margin-left: auto;
+    }
+    .planImg{
+        position: relative;
+        bottom: -50px;
+        right: 0;
+        margin: 0px;
+        width: 100%;
+    }
+    .planText{
+        text-align: left;
+        margin: 0 auto;
+        padding-right: 0%;
+        padding-top: 30px;
+        a{
+            margin:10px auto 20px  0px; 
         }
-        .eventText{
+    }
+
+    .hostParty{
+        background-color: $primary;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 70%;
+            text-align: center;
+            div{
+                
             h2{
+                margin: 0 auto;
+            }
+            p{
                 margin: 0px;
             }
         }
     }
-}
-.galleryContainer{ 
-    padding: 40px;     
+    }
+    .beerBanner{
+        margin: 0 auto;
+        width: 100%;
+        align-content: center;
+    }
+    .eventsContainer{
+        padding: 20px auto;
+        .wrapper{
+            display: flex;
+            align-items: center;
+            margin: 20px auto;
+            // gap: 5%;
+            .eventImg{ 
+                width: 20%; 
+                img{
+                    width: 80%;
+                    margin: 0px;
+                }
+            }
+            .eventText{
+                width: 70%;
+                h2{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    .galleryContainer{ 
+        padding: 40px;     
         .wrapper{
             align-content: center;
             margin: 0 auto;
             gap: 5%;
             width: 90%;
             padding: 40px auto;
-            img{
-        width: 80%;
-        height: 80%;
+                img{
+            width: 80%;
+            height: 80%;
+                }
+                .thirdImg{
+                    visibility: visible;
+                }
             }
-            .thirdImg{
-                visibility: visible;
-            }
-        }
     }
-
+}
 @media(min-width:1200px){
     .locationImg, .planImg{
         max-width: 1200px;

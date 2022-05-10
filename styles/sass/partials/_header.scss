@@ -8,16 +8,22 @@ header{
 .title{
 color: #ff8327;
 font-family: $secondaryFont;
-font-size: 6rem;
-line-height: 50%;
-text-align: center;
+font-size: 4rem;
+padding-top: 60px;
+display: flex;
     h1{
-        margin: 0 auto;
+        line-height: 50%;    
     }
 h1 span {
-    color: #fff;
+    color: $solidWhite;
     font-size: 2rem;
-    top: 20;
     display: block;
+    
+}
+}
+
+.headerBox{
+    width: 50%;
+    display: none;
 }
 }
