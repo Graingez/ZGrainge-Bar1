@@ -451,7 +451,8 @@ header {
           justify-content: space-between;
   height: 50vh;
 }
-header .title {
+
+.title {
   color: #ff8327;
   font-family: "Tulpen One", sans-serif;
   font-size: 4rem;
@@ -463,15 +464,16 @@ header .title {
       -ms-flex-align: center;
           align-items: center;
 }
-header .title h1 {
+.title h1 {
   line-height: 50%;
 }
-header .title h1 span {
+.title h1 span {
   color: #fff;
   font-size: 2rem;
   display: block;
 }
-header .headerBox {
+
+.headerBox {
   width: 50%;
   display: none;
 }
