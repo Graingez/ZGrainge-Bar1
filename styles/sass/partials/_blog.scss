@@ -133,7 +133,8 @@ a{
 }
 }
 .comments{
-    margin-left: auto;
+    max-width: 1200px;
+    margin-right:  0px;
     width: 70%;
     font-family: $primaryFont;
     h2{
@@ -147,6 +148,7 @@ a{
         margin: 0 auto;
     }
 }
+
 .commentBox{
     display: flex;
     flex-direction: column;
@@ -185,6 +187,14 @@ a{
 textarea{
     padding: 20px;
 }
+}
+.messageBox textarea{
+    transition-duration: 1s;
+
+}
+.messageBox textarea:hover,
+.messageBox textarea:focus{
+    border-color: $solidWhite;
 }
 
 @media(max-width:800px){

@@ -379,6 +379,9 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0 auto;
 }
 .navBar .wrapper ul {
@@ -436,6 +439,17 @@ ul {
 header {
   background-image: url(../assets/home-image-1.jpg);
   background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50vh;
 }
 header .title {
   color: #ff8327;
@@ -445,6 +459,9 @@ header .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .title h1 {
   line-height: 50%;
@@ -879,7 +896,8 @@ a {
 }
 
 .comments {
-  margin-left: auto;
+  max-width: 1200px;
+  margin-right: 0px;
   width: 70%;
   font-family: "Chathura", sans-serif;
 }
@@ -943,6 +961,16 @@ a {
   padding: 20px;
 }
 
+.messageBox textarea {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.messageBox textarea:hover,
+.messageBox textarea:focus {
+  border-color: #fff;
+}
+
 @media (max-width: 800px) {
   .title h1 {
     margin: 0px;
@@ -984,12 +1012,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 30vh;
   margin-bottom: 40px;
 }
 
 .contactTitle .wrapper h1 {
-  font-family: "Chathura", sans-serif;
+  font-family: "Tulpen One", sans-serif;
   font-size: 4.5rem;
   margin-top: autopx;
   margin-bottom: 0px;
