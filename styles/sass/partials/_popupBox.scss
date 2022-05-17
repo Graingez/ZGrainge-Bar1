@@ -1,0 +1,85 @@
+.popUpBox{
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border: 5px solid $tertiary;
+  margin: 0 auto;
+  padding: 0 auto;
+  transition-duration: .5s;
+  color: $solidWhite;
+  background-color: $primary;
+  .popUpContent{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+  }
+}
+.popUpMessage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h5{
+    margin: 0px;
+    font-size: 3rem;
+    line-height: normal;
+  }
+  h6{
+    margin: 0px;
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+  p{
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  input[type=email]{
+    padding: 10px;
+    margin-bottom: 40px;
+    border: none;
+    color: $solidWhite;
+    font-family: $secondaryFont;
+    border-bottom: 1px solid $tertiary;
+      &::placeholder{
+        font-size: 0.8rem;
+        color: $solidWhite;
+        opacity: 1;
+        line-height: 1.2rem;
+        text-transform: uppercase;
+          }
+  }
+  button{
+    padding: 10px;
+    margin: 0px auto;
+    height: auto;
+    width: auto;
+    transition-duration: .2s;
+  }
+  .popUpMessage button:active{
+    border: 2px solid $primary;
+  }
+}
+.closeButton{
+  margin-left: 100%;
+  button{
+  width: 5%;
+  letter-spacing: normal;
+  // padding: 10px 15px;
+  margin: 0 auto;
+  transition-duration: .2s;
+  }
+  button:hover,
+  button:focus{
+    color: $tertiary;
+  }
+  button:active{
+    font-size: 1.8rem;
+
+  }
+
+
+}
