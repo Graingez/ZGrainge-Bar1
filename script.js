@@ -5,7 +5,7 @@ const form = document.querySelector('form')
 function emailPopUp() {
     document.getElementById("popUpBox").style.display = "block";
 }
-const popUpTimer = setTimeout("emailPopUp()", 500);
+const popUpTimer = setTimeout("emailPopUp()", 5000);
 console.log('hey')
 
 function handleClick(e) {
