@@ -5,8 +5,7 @@ const form = document.querySelector('form')
 function emailPopUp() {
     document.getElementById("popUpBox").style.display = "block";
 }
-const popUpTimer = setTimeout("emailPopUp()", 5000);
-console.log('hey')
+const popUpTimer = setTimeout("emailPopUp()", 5000000);
 
 function handleClick(e) {
     popUpBox.style.display = 'none';
@@ -22,8 +21,7 @@ form.addEventListener('submit', function (e) {
 
 
     if (email.value === '') {
-        console.log('no email')
         return email.style.border = '2px solid red';
     }
 })
-console.log(email)
+
