@@ -898,9 +898,8 @@ a {
 }
 
 .comments {
+  padding-top: 40px;
   max-width: 1200px;
-  margin-right: 0px;
-  width: 70%;
   font-family: "Chathura", sans-serif;
 }
 .comments h2 {
@@ -1223,6 +1222,128 @@ textarea:focus {
     position: static;
   }
 }
+.popUpBox {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border: 5px solid #ff8327;
+  margin: 0 auto;
+  padding: 0 auto;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+}
+.popUpBox .popUpContent {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
+.popUpMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.popUpMessage h5 {
+  margin: 0px;
+  font-size: 3rem;
+  line-height: normal;
+}
+.popUpMessage h6 {
+  margin: 0px;
+  font-size: 2.5rem;
+  line-height: normal;
+}
+.popUpMessage p {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.popUpMessage input[type=email] {
+  padding: 10px;
+  margin-bottom: 40px;
+  border: none;
+  color: #fff;
+  font-family: "Tulpen One", sans-serif;
+  border-bottom: 1px solid #ff8327;
+}
+.popUpMessage input[type=email]::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.popUpMessage input[type=email]::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.popUpMessage input[type=email]:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.popUpMessage input[type=email]::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.popUpMessage input[type=email]::placeholder {
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.popUpMessage button {
+  padding: 10px;
+  margin: 0px auto;
+  height: auto;
+  width: auto;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.popUpMessage .popUpMessage button:active {
+  border: 2px solid rgb(27, 27, 27);
+}
+
+.closeButton {
+  margin-left: 100%;
+}
+.closeButton button {
+  width: 5%;
+  letter-spacing: normal;
+  margin: 0 auto;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.closeButton button:hover,
+.closeButton button:focus {
+  color: #ff8327;
+}
+.closeButton button:active {
+  font-size: 1.8rem;
+}
+
 @media (max-width: 390px) {
   .title {
     padding-top: 60px;
