@@ -898,8 +898,8 @@ a {
 }
 
 .comments {
-  margin-right: 0px;
-  width: 70%;
+  padding-top: 40px;
+  max-width: 1200px;
   font-family: "Chathura", sans-serif;
 }
 .comments h2 {
